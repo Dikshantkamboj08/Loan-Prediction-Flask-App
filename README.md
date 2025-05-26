@@ -23,6 +23,7 @@ cd Loan-Prediction-Flask-App
 
 3.Create and activate a virtual environment (recommended)
 python -m venv venv
+
 venv\Scripts\activate
 
 4.Install required Python packages
