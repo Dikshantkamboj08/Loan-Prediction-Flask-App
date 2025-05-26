@@ -55,11 +55,11 @@ def predict():
 
         # 3. Validate numerical inputs (avoid divide-by-zero or log(0) errors)
         if applicant_income == 0.0:
-            return render_template("prediction.html", prediction_text=" Applicant Income must be greater than 0.")
+            return render_template("predict.html", prediction_text=" Applicant Income must be greater than 0.")
         if loan_amount == 0.0:
-            return render_template("prediction.html", prediction_text=" Loan Amount must be greater than 0.")
+            return render_template("predict.html", prediction_text=" Loan Amount must be greater than 0.")
         if loan_term == 0.0:
-            return render_template("prediction.html", prediction_text="Loan Term must be greater than 0.")
+            return render_template("predict.html", prediction_text="Loan Term must be greater than 0.")
 
         # 4. Apply log transformation for numerical stability (as used during model training)
         applicant_income_log = np.log(applicant_income)
