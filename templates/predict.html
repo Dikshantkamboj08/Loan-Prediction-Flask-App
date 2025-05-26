@@ -49,6 +49,14 @@
         {% endif %}
       </div>
 
+
+      {% if prediction_text %}
+  <div style="color: red; font-weight: bold; text-align: center; margin-top: 10px;">
+    {{ prediction_text }}
+  </div>
+{% endif %}
+
+      
       <form action="/predict" method="POST" class="bg-white shadow-md rounded-lg p-6 max-w-2xl mx-auto">
         <div class="row g-3">
           <div class="col-md-6">
