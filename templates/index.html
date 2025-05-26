@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loan Prediction System</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- ✅ Navbar -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" width="50" alt="Logo" class="mb-3">
+        <span class="text-2xl font-bold text-green-600 leading-tight">Unlock Your Loan Eligibility in Seconds</span>
+      </div>
+      <nav class="space-x-6">
+        <a href="/" class="text-gray-600 hover:text-indigo-600 font-medium">Home</a>
+        <a href="/predict" class="text-gray-600 hover:text-indigo-600 font-medium">Predict</a>
+        <a href="/about" class="text-gray-600 hover:text-indigo-600 font-medium">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ✅ Hero Section -->
+  <section class="bg-white">
+      <div class="w-full max-w-screen-xl mx-auto px-2 py-16 grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+
+      
+      <!-- 📘 Text Content -->
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+           <span class="text-indigo-600">Loan Approval</span> System
+        </h1>
+        <p class="mt-4 text-lg text-gray-600">
+  Predict loan approval using machine learning based on your income, credit score, employment status, and financial history. 
+  Our intelligent system analyzes your application in seconds and gives you real-time feedback.
+</p>
+<h2 class="mt-6 text-xl font-semibold text-gray-800">Why use our system?</h2>
+<ul class="mt-6 space-y-2 text-gray-600 list-disc list-inside">
+  <li> Quick and accurate predictions</li>
+  <li> Simple and user-friendly interface</li>
+  <li> Powered by real-world financial data</li>
+  <li> Instant feedback on your eligibility</li>
+</ul>
+
+        <a href="/predict" class="inline-block mt-6 px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg shadow hover:bg-indigo-700 transition">
+          Start Prediction
+        </a>
+      </div>
+
+      <!-- 🖼️ Image -->
+      <div>
+        
+<img src="{{ url_for('static', filename='images/Pagephoto.png') }}" class="img-thumbnail" alt="Photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer class="bg-white border-t mt-12">
+    <div class="max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
+      © 2025 LoanPredict. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
